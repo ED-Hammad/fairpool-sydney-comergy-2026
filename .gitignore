@@ -1,0 +1,30 @@
+# MATLAB
+*.asv
+*.m~
+*.mex*
+*.mat
+slprj/
+*.autosave
+octave-workspace
+
+# Run outputs written by gc_main with a run tag (the shipped headline tables live in results/headline/)
+results/*_????????_??????_*.csv
+results/inputs_used_*.xlsx
+results/gc_results_*.mat
+results/statements_*/
+figures/
+logs/
+*.log
+
+# CSV twins of the benchmark written by gc_load_data at run time
+data/benchmark_hourly_2021.csv
+data/members.csv
+
+# The organiser's benchmark workbook is not redistributed here (see data/README.md)
+data/ComErgy Benchmark Dataset 2026.xlsx
+
+# Office and OS files
+~$*
+*.tmp
+.DS_Store
+Thumbs.db

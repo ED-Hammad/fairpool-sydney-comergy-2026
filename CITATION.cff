@@ -1,0 +1,21 @@
+cff-version: 1.2.0
+message: "If you use this model or its results, please cite it as below."
+title: "FairPool Sydney: a cooperative energy pool with optimised shared storage and Shapley settlement for the ComErgy benchmark community"
+type: software
+authors:
+  - family-names: Masood
+    given-names: Hammad
+    affiliation: "Khalifa University of Science and Technology, Abu Dhabi, United Arab Emirates"
+    email: engr.hammadmasood@gmail.com
+version: "1.0.0"
+date-released: "2026-10-18"
+license: MIT
+repository-code: "https://github.com/ED-Hammad/fairpool-sydney-comergy-2026"
+keywords:
+  - community energy
+  - cooperative game theory
+  - Shapley value
+  - shared battery storage
+  - linear programming
+  - ComErgy Grand Challenge 2026
+abstract: "MATLAB model that operates the nine households of the ComErgy Benchmark Dataset 2026 as one cooperative pool: rooftop solar serves all loads first, the fourteen battery modules act as one shared store scheduled by a daily linear programme, the grid is used last under an import cap, and the annual saving is divided by the exact Shapley value over all 511 coalitions with a solidarity share for lower-income households. Entry to the ComErgy Community Energy Grand Challenge 2026."
