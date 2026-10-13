@@ -4,7 +4,7 @@ function K = gc_metrics(R, L, G, Ekwh, D, P)
 % Part of FairPool Sydney: a cooperative energy pool with optimised shared storage and Shapley
 % settlement for the ComErgy benchmark community (entry to the ComErgy Grand Challenge 2026).
 % Author: Hammad Masood, Khalifa University of Science and Technology. Licence: MIT (see LICENSE).
-% Repository: https://github.com/USERNAME/fairpool-sydney-comergy-2026
+% Repository: https://github.com/ED-Hammad/fairpool-sydney-comergy-2026
 %
 K.cost_energy = R.cost_energy; K.import_kwh = sum(R.imp); K.export_kwh = sum(R.exp); K.load_kwh = sum(L); K.pv_kwh = sum(G);
 K.self_consumption = 1 - K.export_kwh/max(K.pv_kwh, 1e-9); K.self_sufficiency = 1 - K.import_kwh/K.load_kwh;

@@ -5,7 +5,7 @@ function F = gc_fairness(gain, bill_sa)
 % Part of FairPool Sydney: a cooperative energy pool with optimised shared storage and Shapley
 % settlement for the ComErgy benchmark community (entry to the ComErgy Grand Challenge 2026).
 % Author: Hammad Masood, Khalifa University of Science and Technology. Licence: MIT (see LICENSE).
-% Repository: https://github.com/USERNAME/fairpool-sydney-comergy-2026
+% Repository: https://github.com/ED-Hammad/fairpool-sydney-comergy-2026
 %
 r = gain ./ bill_sa; F.rel = r; F.min_rel = min(r); F.min_abs = min(gain);
 x = sort(max(r, 0)); nn = numel(x); F.gini = (2*sum((1:nn)'.*x)/(nn*sum(x))) - (nn + 1)/nn;

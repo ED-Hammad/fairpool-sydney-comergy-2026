@@ -6,7 +6,7 @@ function CO = gc_coalitions(D, SA, P, method)
 % Part of FairPool Sydney: a cooperative energy pool with optimised shared storage and Shapley
 % settlement for the ComErgy benchmark community (entry to the ComErgy Grand Challenge 2026).
 % Author: Hammad Masood, Khalifa University of Science and Technology. Licence: MIT (see LICENSE).
-% Repository: https://github.com/USERNAME/fairpool-sydney-comergy-2026
+% Repository: https://github.com/ED-Hammad/fairpool-sydney-comergy-2026
 %
 n = 9; N = 2^n - 1; mask = fliplr(dec2bin(1:N, n) == '1'); sz = sum(mask, 2);
 v = zeros(N,1); cost = zeros(N,1); fee = P.fee_conn_day*365 + P.fee_operator_year; tS = tic;

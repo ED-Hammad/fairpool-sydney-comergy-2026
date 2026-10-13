@@ -5,7 +5,7 @@ function R = gc_dispatch_rule(load, pv, Ekwh, Pkw, price, fit, P)
 % Part of FairPool Sydney: a cooperative energy pool with optimised shared storage and Shapley
 % settlement for the ComErgy benchmark community (entry to the ComErgy Grand Challenge 2026).
 % Author: Hammad Masood, Khalifa University of Science and Technology. Licence: MIT (see LICENSE).
-% Repository: https://github.com/USERNAME/fairpool-sydney-comergy-2026
+% Repository: https://github.com/ED-Hammad/fairpool-sydney-comergy-2026
 %
 n = numel(load); eta = sqrt(P.bat.eta_rt); Emin = P.bat.soc_min*Ekwh; Emax = P.bat.soc_max*Ekwh; soc = P.bat.soc_init*Ekwh;
 imp = zeros(n,1); expo = zeros(n,1); ch = zeros(n,1); dis = zeros(n,1); S = zeros(n,1);

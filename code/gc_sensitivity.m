@@ -5,7 +5,7 @@ function SE = gc_sensitivity(P0)
 % Part of FairPool Sydney: a cooperative energy pool with optimised shared storage and Shapley
 % settlement for the ComErgy benchmark community (entry to the ComErgy Grand Challenge 2026).
 % Author: Hammad Masood, Khalifa University of Science and Technology. Licence: MIT (see LICENSE).
-% Repository: https://github.com/USERNAME/fairpool-sydney-comergy-2026
+% Repository: https://github.com/ED-Hammad/fairpool-sydney-comergy-2026
 %
 names = P0.sens.names; lo = P0.sens.lo; hi = P0.sens.hi; base = gc_eval(P0);
 SE.base = base; SE.names = names; SE.lo = lo; SE.hi = hi; SE.out = nan(numel(names), 2, 3);

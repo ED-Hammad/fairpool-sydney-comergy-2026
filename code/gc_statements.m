@@ -5,7 +5,7 @@ function gc_statements(D, SA, CO, K, P, tag)
 % Part of FairPool Sydney: a cooperative energy pool with optimised shared storage and Shapley
 % settlement for the ComErgy benchmark community (entry to the ComErgy Grand Challenge 2026).
 % Author: Hammad Masood, Khalifa University of Science and Technology. Licence: MIT (see LICENSE).
-% Repository: https://github.com/USERNAME/fairpool-sydney-comergy-2026
+% Repository: https://github.com/ED-Hammad/fairpool-sydney-comergy-2026
 %
 outdir = fullfile(P.res_dir, ['statements_' tag]); if ~exist(outdir, 'dir'), mkdir(outdir); end
 vN = CO.vN; n = 9; sur = max(D.pv - D.load, 0); def = max(D.load - D.pv, 0);

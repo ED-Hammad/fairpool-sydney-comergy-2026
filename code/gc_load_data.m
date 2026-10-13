@@ -4,7 +4,7 @@ function D = gc_load_data(P)
 % Part of FairPool Sydney: a cooperative energy pool with optimised shared storage and Shapley
 % settlement for the ComErgy benchmark community (entry to the ComErgy Grand Challenge 2026).
 % Author: Hammad Masood, Khalifa University of Science and Technology. Licence: MIT (see LICENSE).
-% Repository: https://github.com/USERNAME/fairpool-sydney-comergy-2026
+% Repository: https://github.com/ED-Hammad/fairpool-sydney-comergy-2026
 %
 M = readmatrix(P.src_xlsx, 'Sheet', 'ComErgy Benchmark Dataset 2026', 'Range', 'A3:M8762');
 assert(size(M,1) == 8760 && ~any(isnan(M(:))), 'benchmark block must be 8760 x 13 without gaps');

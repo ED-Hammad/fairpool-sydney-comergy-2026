@@ -5,7 +5,7 @@ function SA = gc_standalone(D, P)
 % Part of FairPool Sydney: a cooperative energy pool with optimised shared storage and Shapley
 % settlement for the ComErgy benchmark community (entry to the ComErgy Grand Challenge 2026).
 % Author: Hammad Masood, Khalifa University of Science and Technology. Licence: MIT (see LICENSE).
-% Repository: https://github.com/USERNAME/fairpool-sydney-comergy-2026
+% Repository: https://github.com/ED-Hammad/fairpool-sydney-comergy-2026
 %
 n = D.n; fee = P.fee_conn_day*365; SA.bill = zeros(9,1); SA.bill_noder = zeros(9,1);
 SA.imp = zeros(n,9); SA.exp = zeros(n,9); SA.dis = zeros(n,9);

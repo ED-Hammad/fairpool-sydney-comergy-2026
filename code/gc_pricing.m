@@ -6,7 +6,7 @@ function PR = gc_pricing(D)
 % Part of FairPool Sydney: a cooperative energy pool with optimised shared storage and Shapley
 % settlement for the ComErgy benchmark community (entry to the ComErgy Grand Challenge 2026).
 % Author: Hammad Masood, Khalifa University of Science and Technology. Licence: MIT (see LICENSE).
-% Repository: https://github.com/USERNAME/fairpool-sydney-comergy-2026
+% Repository: https://github.com/ED-Hammad/fairpool-sydney-comergy-2026
 %
 n = D.n; sur = max(D.pv - D.load, 0); def = max(D.load - D.pv, 0); TS = sum(sur, 2); TD = sum(def, 2);
 sdr = zeros(n,1); m = TD > 0; sdr(m) = TS(m)./TD(m); pr = D.price; ft = D.fit; p_sell = ft; p_buy = ft;

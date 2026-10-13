@@ -6,7 +6,7 @@ function [pv_spec, poa] = gc_pv_model(ghi, temp, time, P)
 % Part of FairPool Sydney: a cooperative energy pool with optimised shared storage and Shapley
 % settlement for the ComErgy benchmark community (entry to the ComErgy Grand Challenge 2026).
 % Author: Hammad Masood, Khalifa University of Science and Technology. Licence: MIT (see LICENSE).
-% Repository: https://github.com/USERNAME/fairpool-sydney-comergy-2026
+% Repository: https://github.com/ED-Hammad/fairpool-sydney-comergy-2026
 %
 n = numel(ghi); doy = day(time, 'dayofyear'); hr = hour(time) + 0.5;  % mid-hour local standard time
 if P.pv.dst  % if the series is in local clock time, clock hours during NSW daylight saving are one hour ahead of standard time

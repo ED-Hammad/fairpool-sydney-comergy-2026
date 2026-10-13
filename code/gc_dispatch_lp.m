@@ -7,7 +7,7 @@ function R = gc_dispatch_lp(load, pv, Ekwh, Pkw, price, fit, P, opts)
 % Part of FairPool Sydney: a cooperative energy pool with optimised shared storage and Shapley
 % settlement for the ComErgy benchmark community (entry to the ComErgy Grand Challenge 2026).
 % Author: Hammad Masood, Khalifa University of Science and Technology. Licence: MIT (see LICENSE).
-% Repository: https://github.com/USERNAME/fairpool-sydney-comergy-2026
+% Repository: https://github.com/ED-Hammad/fairpool-sydney-comergy-2026
 %
 n = numel(load); eta = sqrt(P.bat.eta_rt); Emin = P.bat.soc_min*Ekwh; Emax = P.bat.soc_max*Ekwh;
 cap = max(load); if nargin > 7 && isfield(opts, 'peak_cap_kw'), cap = opts.peak_cap_kw; end

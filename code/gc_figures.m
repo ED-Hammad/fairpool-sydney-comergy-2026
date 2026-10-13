@@ -4,7 +4,7 @@ function gc_figures(D, SA, RES, CO, SWEEP, SE, P)
 % Part of FairPool Sydney: a cooperative energy pool with optimised shared storage and Shapley
 % settlement for the ComErgy benchmark community (entry to the ComErgy Grand Challenge 2026).
 % Author: Hammad Masood, Khalifa University of Science and Technology. Licence: MIT (see LICENSE).
-% Repository: https://github.com/USERNAME/fairpool-sydney-comergy-2026
+% Repository: https://github.com/ED-Hammad/fairpool-sydney-comergy-2026
 %
 outdir = fullfile(P.fig_dir, P.run_tag); if ~exist(outdir, 'dir'), mkdir(outdir); end
 ex = @(f, name) exportgraphics(f, fullfile(outdir, [name '.png']), 'Resolution', 300, 'BackgroundColor', 'white');
